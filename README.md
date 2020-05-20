@@ -6,6 +6,10 @@ Simple Bruteforce script that attacks PHP hashes
 
 if you find a hash that been created with password_hash() function this script will try to bruteforce the password
 
+You need a good passwordlist like:
+
+Rockyou: [Download RockYou](https://github.com/praetorian-code/Hob0Rules/blob/master/wordlists/rockyou.txt.gz)
+
 ## Usage
 ```
  ____  _            _    ______                 
