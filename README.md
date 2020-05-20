@@ -10,6 +10,11 @@ You need a good passwordlist like:
 
 Rockyou: [Download RockYou](https://github.com/praetorian-code/Hob0Rules/blob/master/wordlists/rockyou.txt.gz)
 
+## Requirements
+
++ PHP 7.0
++ PHP CLI
+
 ## Usage
 ```
  ____  _            _    ______                 
