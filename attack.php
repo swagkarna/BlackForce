@@ -63,10 +63,11 @@ if ($argc != 5 || in_array($argv[1], array('--help', '-help', '-h', '-?'))) {
             }
         }
         fclose($file);
-
-        $option = readline("Do you want to export result (Y/N): ");
+        echo "Do you want to export result (Y/N): ";
+        $option = readline("");
         if ($option == "Y" or $option == "y") {
-            $myfile = fopen("result - " . date("Y-m-d h:m:s") . ".txt", "w");
+            $filename = "result - " . date("Y-m-d h_m_s") . ".txt";
+            $myfile = fopen($filename, "w+");
             fwrite($myfile, "[ BlackForce Result ]\n");
             fwrite($myfile, "------------------------\n");
             foreach ($found as $fph) {
