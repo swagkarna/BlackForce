@@ -4,7 +4,7 @@ Simple Bruteforce script that attacks PHP hashes
 ## About
 Simple Bruteforce script that attacks PHP hashes
 
-if you find a hash that been created with password_hash() function this script will try to bruteforce the password
+if you find a hash that been created with password_hash() function this script will try to bruteforce it
 
 You need a good passwordlist like:
 
