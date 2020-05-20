@@ -15,9 +15,9 @@ echo "\e[1;31m
 $striped = null;
 if ($argc != 5 || in_array($argv[1], array('--help', '-help', '-h', '-?'))) {
     echo "Usage:\n";
-    echo "./attack.php -hf <hashfile> -w <passwordlist>\n";
+    echo "$argv[0] -hf <hashfile> -w <passwordlist>\n";
     echo "Example:\n";
-    echo "./attack.php -hf hash.txt -w passwords.txt\n";
+    echo "$argv[0] -hf hash.txt -w passwords.txt\n";
     echo "-----------------------------------------------------\n";
 } else {
     $commands = ["--hash", "--wordlist", "-w", "-hf"];
