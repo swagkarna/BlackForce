@@ -15,6 +15,11 @@ Rockyou: [Download RockYou](https://github.com/praetorian-code/Hob0Rules/blob/ma
 + PHP 7.0
 + PHP CLI
 
+## Tested On
++ Linux [ 🐧 ]
+
+Not tested on Windows and you might encouter issues ):
+
 ## Usage
 ```
  ____  _            _    ______                 
