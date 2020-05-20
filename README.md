@@ -1,6 +1,7 @@
-# BlackForce
+# BlackForce 💀
 Simple Bruteforce script that attacks PHP hashes
 
+![](https://badgen.net/badge/version/0.1/blue) ![](https://badgen.net/github/license/BlackHacker511/BlackForce)
 ## About
 Simple Bruteforce script that attacks PHP hashes
 
