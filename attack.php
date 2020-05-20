@@ -41,6 +41,9 @@ if ($argc != 5 || in_array($argv[1], array('--help', '-help', '-h', '-?'))) {
             $hashes = explode(PHP_EOL, $text);
             foreach ($hashes as $hash) {
                 if (!is_null(trim($hash)) && !empty(trim($hash)) && trim($hash) !== "\n" && trim($hash) !== "\r") {
+                    echo "\n";
+                    echo "Attacking: " . $hash . "\n";
+                    echo "----------------------------" . "\n";
                     if ($passwords = fopen($args[2], "r")) {
                         while (($password = fgets($passwords)) !== false) {
                             if (password_verify(trim($password), trim($hash))) {
@@ -48,7 +51,7 @@ if ($argc != 5 || in_array($argv[1], array('--help', '-help', '-h', '-?'))) {
                                 echo "-------------------------------\n";
                                 echo "Password Found: " . trim($password) . "\n";
                                 echo "-------------------------------\n";
-                                echo "\e[39m";
+                                echo "\e[0m";
                                 $found[] = [$hash => $password];
                                 break;
                             } else {
@@ -58,7 +61,6 @@ if ($argc != 5 || in_array($argv[1], array('--help', '-help', '-h', '-?'))) {
 
                     }
                     fclose($passwords);
-
                 }
             }
         }
