@@ -18,8 +18,7 @@ Rockyou: [Download RockYou](https://github.com/praetorian-code/Hob0Rules/blob/ma
 
 ## Tested On
 + Linux [ 🐧 ]
-
-Not tested on Windows and you might encouter issues ):
++ Windows 10
 
 ## Usage
 ```
