@@ -17,9 +17,12 @@ if ($argc != 5 || in_array($argv[1], array('--help', '-help', '-h', '-?'))) {
     echo "Example:\n";
     echo "./attack.php -hf hash.txt -w passwords.txt\n";
 } else {
+    $commands = ["--hash", "--wordlist", "-w", "-hf"];
     foreach ($argv as $value) {
-        if ($value == "--hash" or $value == "--wordlist" or $value == "-w" or $value == "-hf") {
+        if (in_array($value, $commands)) {
+
         } else {
+
             $striped .= $value . "| BF |";
         }
     }
