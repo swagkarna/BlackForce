@@ -16,6 +16,14 @@ Rockyou: [Download RockYou](https://github.com/praetorian-code/Hob0Rules/blob/ma
 + PHP 7.0
 + PHP CLI
 
+## Installation
+```
+sudo apt install php-dev php php-cli
+git clone https://github.com/BlackHacker511/BlackForce.git
+cd BlackForce
+./attack.php --help
+```
+
 ## Tested On
 + Linux [ 🐧 ]
 + Windows 10
